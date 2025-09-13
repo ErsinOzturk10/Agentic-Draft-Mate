@@ -9,6 +9,7 @@ model = OllamaLLM(model="mistral")
 # 🔹 Define the prompt template for step-by-step reasoning
 template = """ Question : {question}
 Answer: Let's think step by step."""
+print(template)
 
 prompt = ChatPromptTemplate.from_template(template)
 
