@@ -15,8 +15,8 @@ prompt = ChatPromptTemplate.from_template(template)
 def lookup_technical_details(equipment_name):
     # Dummy implementation for retrieving technical details
     normalized = equipment_name.strip().upper()
-    if normalized == "EQ12345":
-        return "Technical details for EQ12345: Model X, Power: 500W, Dimensions: 50x50x50 cm."
+    if normalized == "EQ12345" or normalized == "EQ67890":
+        return "Technical details for EQ12345 or EQ67890: Model X, Power: 500W, Dimensions: 50x50x50 cm."
     return f"No technical details found for {equipment_name}."
 
 def fetch_equipment_history(equipment_name):
