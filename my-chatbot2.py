@@ -10,6 +10,7 @@ model = OllamaLLM(model="mistral")
 template = """ Question : {question}
 Answer: Let's think step by step."""
 print(template)
+print("ahmet chances")
 
 prompt = ChatPromptTemplate.from_template(template)
 
